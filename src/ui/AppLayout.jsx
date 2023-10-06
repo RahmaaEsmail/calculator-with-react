@@ -9,7 +9,7 @@ function AppLayout() {
     return (
       <div className="app-container">
         <Header />
-        <OutputBox result={result} number={number} />
+        <OutputBox number={number} />
         <CalculatorBoard number={number} setNumber={setNumber} />
       </div>
     );
