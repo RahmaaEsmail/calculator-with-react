@@ -4,16 +4,15 @@ import Header from "./Header"
 import OutputBox from "./OutputBox"
 
 function AppLayout() {
-    const [number,setNumber] = useState([])
-    const [result,setResult] = useState(null)
+    const [number, setNumber] = useState([]);
 
     return (
-        <div className="app-container">
-            <Header/>
-            <OutputBox result={result} number={number}/>
-            <CalculatorBoard setResult={setResult} number={number} setNumber={setNumber}/>
-        </div>
-    )
+      <div className="app-container">
+        <Header />
+        <OutputBox result={result} number={number} />
+        <CalculatorBoard number={number} setNumber={setNumber} />
+      </div>
+    );
 }
 
 export default AppLayout
